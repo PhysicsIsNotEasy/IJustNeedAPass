@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CV Pavlo Stasiv</title>
 </head>
 <body>
-    <header>
-    <center><h1>CV</h1></center>
-    <center><h2>Pavlo Stasiv</h2></center>
-    <hr>
-    <center><a href="tel:+380111111111">+380111111111</a> &bull; <a href="mailto:redacted@gmail.com">redacted@gmail.com</a> &bull; <a href="https://www.linkedin.com/in/redacted">https://www.linkedin.com/in/redacted</a> &bull; Lviv</center>
+    <header class="header">
+        <h2 class="header-title">Pavlo Stasiv</h2>
+        <ul class="header-socials">
+            <li><a href="tel:+380111111111">+38 011 111 1111</a></li>
+            <li><a href="mailto:redacted@gmail.com">redacted@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/redacted">linkedin.com/redacted</a></li>
+            <li><a>Lviv</a></li>
+        </ul>
     </header>
-    <main>    
-        <section>
-            <img width="200" src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1707,h_2560/https://myshootingphoto.com/wp-content/uploads/2022/12/Photo_cv_professionnel-scaled.jpeg">
-        </section>
-        <section>
-            <h3>Summary</h3>
+    <main class="main-wrapper">    
+        <section class="brief-info">
+            <img alt="portrait" src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1707,h_2560/https://myshootingphoto.com/wp-content/uploads/2022/12/Photo_cv_professionnel-scaled.jpeg">
             <p>
                 Passionate about low-level programming and software engineering. Work mainly with C++ using CMake. Have an experience of working using C++ with Unreal Engine, JUCE framework using Git version control system. Dived into x86 assembly language and assembly language for DOS. Looking for a position in application or system programming to gain more practical experience and enhance technical knowledge and soft skills.
             </p>
         </section>
-        <section>
-            <h3>Experience</h3>
-            C++ Developer at Redacted since January 2025					           	            		          
-            <ul>
+        <h3 class="section-title" >Experience</h3>
+        <section class="experience">
+            <div class="experience-item">
+                <h4 class="experience-item-position">
+                     C++ Developer
+                </h4>
+                <h4 class="experience-item-company">
+                     Redacted
+                </h4>
+                <h4 class="experience-item-span">
+                    January 2025 –
+                </h4>
+            </div>			           	            		          
+            <ul class="experience-accomplishments">
                 <li>Designed and developed reusable UI components</li>
                 <li>Diagnosed and resolved visual and interaction issues, improving UX consistency and reducing user complaints</li>
                 <li>Collaborated with QA to reproduce and document issues, introducing regression test scenarios</li>
@@ -40,8 +51,8 @@
                 <li>Sync application with website and API backend</li>
             </ul>
         </section>
-        <section>
-            <h3>Skills</h3>
+        <section class="skills">
+            <h3 class="section-title" >Skills</h3>
             <h4>Technical</h4>
             <ul>
                 <li>C++</li>
