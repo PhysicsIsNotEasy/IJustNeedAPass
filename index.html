@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>CV Pavlo Stasiv</title>
 </head>
 <body>
@@ -51,8 +52,8 @@
                 <li>Sync application with website and API backend</li>
             </ul>
         </section>
+        <h3 class="section-title" >Skills</h3>
         <section class="skills">
-            <h3 class="section-title" >Skills</h3>
             <h4>Technical</h4>
             <ul>
                 <li>C++</li>
@@ -80,8 +81,37 @@
                 <li>English (B2)</li>
             </ul>
         </section>
+        <h3 class="section-title" >Reviews</h3>
+        <section class="reviews" id="reviews">
+        </section>
+        <dialog id="contacts-modal">
+            <div id="contacts-modal-header">
+                <button id="contacts-modal-close-button" commandfor="contacts-modal" command="request-close">&times;</button>
+            </div>
+            <div id="contacts-modal-body">
+                <form id="contacts-modal-form" action="https://formspree.io/f/xpqylvwr" method="post">
+                    <label for="contacts-modal-name">Name</label>
+                    <input id="contacts-modal-name" name="first-name" maxlength="100" placeholder="John" required>
+
+                    <label for="contacts-modal-email">Email</label>
+                    <input id="contacts-modal-email" name="email" maxlength="254" placeholder="john@example.com" required>
+
+                    <label for="contacts-modal-tel">Phone</label>
+                    <input id="contacts-modal-tel" name="tel" maxlength="15" placeholder="+38" required>
+
+                    <label for="contact-modal-message">Message</label>
+                    <textarea id="contact-modal-message" name="message" placeholder="Hey, you are so cool..."></textarea>
+
+                    <button id="contacts-modal-submit" type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="contacts-modal-footer">
+            </div>
+        </dialog>
+        <button id="theme-toggle-button">Light</button>
     </main>
-
-
+    <footer>
+        <h4 class="os-info" id="os-info" ></h4>
+    </footer>
 </body>
 </html>
