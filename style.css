@@ -70,6 +70,7 @@ body main
 .header-title 
 {
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .header-title::after 
