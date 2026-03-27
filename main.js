@@ -7,6 +7,7 @@ const commentsRequest = fetch("https://jsonplaceholder.typicode.com/posts/22/com
 let html = null;
 let themeToggleBtn = null;
 let contactsModal = null;
+let contactsModalClose = null;
 let themeOverriden = false;
 
 document.addEventListener("DOMContentLoaded", async () => 
@@ -14,6 +15,11 @@ document.addEventListener("DOMContentLoaded", async () =>
     html = document.querySelector("html");
     themeToggleBtn = document.getElementById("theme-toggle-button");
     contactsModal = document.getElementById("contacts-modal");
+    contactsModalClose = contactsModal.querySelector("#contacts-modal-close-button")
+
+    contactsModalClose.addEventListener('click', (event) => {
+        contactsModal.requestClose();
+    })
 
     setTimeout(() => {
         contactsModal.showModal();
